@@ -1,0 +1,8 @@
+{"config" : [
+    { 
+        "test1" : [
+            { "enabled": true, "run_detail": false, "source_db_config" : "oracle_prod", "target_db_config" : "ss_prod", "name" : "test_run", "source_query" : "select somecol, some_other_col, yr from some_table where some_col='blah' AND /* PARALLEL(BY=yr;) */", "target_query" : "select somecol, some_other_col, yr from some_table where some_col='blah' AND /* PARALLEL(BY=yr;) */" }
+        ]
+    }
+]
+}

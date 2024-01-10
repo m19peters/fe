@@ -1,0 +1,370 @@
+Error caught for sapeast_ETTIFN at 2023-04-17 08:47:42.233513 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf5p-10g:3306): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.12 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11728.00 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 38934.10 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EHAUISU at 2023-04-17 14:48:47.669350 (MySQLdb.ProgrammingError) (1146, "Table 'DATA_LAKE.sapewest_EHAUISU' doesn't exist")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(HAUS) HAUS_mx, MIN(HAUS) HAUS_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,HAUS) n,MANDT,HAUS from DATA_LAKE.sapewest_EHAUISU where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/f405)Error caught for sapwest_ETTIFN at 2023-04-17 14:52:55.380818 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf6p-10g:3306): Leaf Error (memlf5p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.75 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11658.25 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 36967.12 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapwest_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-17 15:41:25.901078 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3306): Leaf Error (memlf3p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64847.75 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11591.50 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 37209.75 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EHAUISU at 2023-04-17 16:03:22.965592 (MySQLdb.ProgrammingError) (1146, "Table 'DATA_LAKE.sapewest_EHAUISU' doesn't exist")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(HAUS) HAUS_mx, MIN(HAUS) HAUS_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,HAUS) n,MANDT,HAUS from DATA_LAKE.sapewest_EHAUISU where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/f405)Error caught for sapwest_ETTIFN at 2023-04-17 16:06:54.493305 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3306): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11597.88 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 37194.33 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapwest_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-17 17:08:37.758340 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf2p-10g:3306): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11598.38 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 38003.00 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EHAUISU at 2023-04-17 17:26:43.417467 (MySQLdb.ProgrammingError) (1146, "Table 'DATA_LAKE.sapewest_EHAUISU' doesn't exist")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(HAUS) HAUS_mx, MIN(HAUS) HAUS_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,HAUS) n,MANDT,HAUS from DATA_LAKE.sapewest_EHAUISU where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/f405)Error caught for sapwest_ETTIFN at 2023-04-17 17:30:19.080888 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf6p-10g:3306): Leaf Error (memlf3p-10g:3307): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.75 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11599.12 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 38068.25 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapwest_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-17 22:02:10.379381 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf2p-10g:3306): Leaf Error (memlf5p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11575.75 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 38877.25 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EHAUISU at 2023-04-17 22:23:24.375233 (MySQLdb.ProgrammingError) (1146, "Table 'DATA_LAKE.sapewest_EHAUISU' doesn't exist")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(HAUS) HAUS_mx, MIN(HAUS) HAUS_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,HAUS) n,MANDT,HAUS from DATA_LAKE.sapewest_EHAUISU where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/f405)Error caught for sapwest_ETTIFN at 2023-04-17 22:27:47.615708 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf2p-10g:3307): Leaf Error (memlf2p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11632.12 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 38844.87 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapwest_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-18 12:49:33.423087 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3306): Leaf Error (memlf5p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64851.12 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11930.38 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 29887.62 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EHAUISU at 2023-04-18 13:09:41.290555 (MySQLdb.ProgrammingError) (1146, "Table 'DATA_LAKE.sapewest_EHAUISU' doesn't exist")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(HAUS) HAUS_mx, MIN(HAUS) HAUS_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,HAUS) n,MANDT,HAUS from DATA_LAKE.sapewest_EHAUISU where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/f405)Error caught for sapeast_ETTIFN at 2023-04-18 15:23:17.238638 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf2p-10g:3307): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.12 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11920.38 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 31857.25 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EHAUISU at 2023-04-18 15:43:32.220365 (MySQLdb.ProgrammingError) (1146, "Table 'DATA_LAKE.sapewest_EHAUISU' doesn't exist")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(HAUS) HAUS_mx, MIN(HAUS) HAUS_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,HAUS) n,MANDT,HAUS from DATA_LAKE.sapewest_EHAUISU where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/f405)Error caught for sapwest_ETTIFN at 2023-04-18 15:47:29.110758 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3306): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11909.00 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 33848.37 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapwest_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_EASTL at 2023-04-18 17:04:19.476713 Did not include query hint for parallel processing... please ensure you included comment in sql for where filter should occur and include semicolon.
+                            Example query should like like this: select col1, col2 FROM schema.tablename WHERE someothercol=1 AND /* PARALLEL(BY=col1,col2;) */ AND someothercol=1
+
+                            Query was: ss_prod
+                            Error caught for sapeast_EASTS at 2023-04-18 17:05:09.237248 Did not include query hint for parallel processing... please ensure you included comment in sql for where filter should occur and include semicolon.
+                            Example query should like like this: select col1, col2 FROM schema.tablename WHERE someothercol=1 AND /* PARALLEL(BY=col1,col2;) */ AND someothercol=1
+
+                            Query was: ss_prod
+                            Error caught for sapeast_AUSP at 2023-04-18 17:10:54.508420 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf3p-10g:3306): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.12 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11862.75 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 35026.12 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(OBJEK) OBJEK_mx, MIN(OBJEK) OBJEK_mn,MAX(ATINN) ATINN_mx, MIN(ATINN) ATINN_mn,MAX(ATZHL) ATZHL_mx, MIN(ATZHL) ATZHL_mn,MAX(MAFID) MAFID_mx, MIN(MAFID) MAFID_mn,MAX(KLART) KLART_mx, MIN(KLART) KLART_mn,MAX(ADZHL) ADZHL_mx, MIN(ADZHL) ADZHL_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,OBJEK,ATINN,ATZHL,MAFID,KLART,ADZHL) n,MANDT,OBJEK,ATINN,ATZHL,MAFID,KLART,ADZHL from DATA_LAKE.sapeast_AUSP where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_EANLH at 2023-04-18 17:10:59.508906 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf1p-10g:3306): Leaf Error (memlf3p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11882.00 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 35025.87 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(BIS) BIS_mx, MIN(BIS) BIS_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,BIS) n,MANDT,ANLAGE,BIS from DATA_LAKE.sapeast_EANLH where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-18 17:11:02.660572 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf6p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.25 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11862.75 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 35025.75 Mb). See https://docs.memsql.com/troubleshooting/latest/memory-errors for addit")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EHAUISU at 2023-04-18 17:12:35.004342 (MySQLdb.ProgrammingError) (1146, "Table 'DATA_LAKE.sapewest_EHAUISU' doesn't exist")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(HAUS) HAUS_mx, MIN(HAUS) HAUS_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,HAUS) n,MANDT,HAUS from DATA_LAKE.sapewest_EHAUISU where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/f405)Error caught for sapwest_ETTIFN at 2023-04-18 17:15:36.767030 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3306): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11983.75 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 34916.00 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapwest_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-18 17:48:03.912620 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf5p-10g:3307): Leaf Error (memlf4p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.50 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 12159.12 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 35223.62 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-19 09:06:20.154062 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf2p-10g:3307): Leaf Error (memlf3p-10g:3307): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11966.75 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 34624.69 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_AUSP at 2023-04-19 13:53:03.591614 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64844.88 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 12105.25 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 34378.00 Mb). See https://docs.memsql.com/troubleshooting/latest/memory-errors for addit")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(OBJEK) OBJEK_mx, MIN(OBJEK) OBJEK_mn,MAX(ATINN) ATINN_mx, MIN(ATINN) ATINN_mn,MAX(ATZHL) ATZHL_mx, MIN(ATZHL) ATZHL_mn,MAX(MAFID) MAFID_mx, MIN(MAFID) MAFID_mn,MAX(KLART) KLART_mx, MIN(KLART) KLART_mn,MAX(ADZHL) ADZHL_mx, MIN(ADZHL) ADZHL_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,OBJEK,ATINN,ATZHL,MAFID,KLART,ADZHL) n,MANDT,OBJEK,ATINN,ATZHL,MAFID,KLART,ADZHL from DATA_LAKE.sapeast_AUSP where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-19 13:53:10.697313 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf1p-10g:3306): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 12105.25 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 34378.75 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EHAUISU at 2023-04-19 13:56:29.236038 (MySQLdb.ProgrammingError) (1146, "Table 'DATA_LAKE.sapewest_EHAUISU' doesn't exist")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(HAUS) HAUS_mx, MIN(HAUS) HAUS_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,HAUS) n,MANDT,HAUS from DATA_LAKE.sapewest_EHAUISU where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/f405)Error caught for sapwest_ETTIFN at 2023-04-19 14:00:06.453159 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3306): Leaf Error (memlf5p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11990.25 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 34507.25 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapwest_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_AUSP at 2023-04-19 14:59:28.876607 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3306): Leaf Error (memlf3p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.12 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11973.88 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 33885.12 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(OBJEK) OBJEK_mx, MIN(OBJEK) OBJEK_mn,MAX(ATINN) ATINN_mx, MIN(ATINN) ATINN_mn,MAX(ATZHL) ATZHL_mx, MIN(ATZHL) ATZHL_mn,MAX(MAFID) MAFID_mx, MIN(MAFID) MAFID_mn,MAX(KLART) KLART_mx, MIN(KLART) KLART_mn,MAX(ADZHL) ADZHL_mx, MIN(ADZHL) ADZHL_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,OBJEK,ATINN,ATZHL,MAFID,KLART,ADZHL) n,MANDT,OBJEK,ATINN,ATZHL,MAFID,KLART,ADZHL from DATA_LAKE.sapeast_AUSP where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-19 14:59:35.626324 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11973.88 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 33884.75 Mb). See https://docs.memsql.com/troubleshooting/latest/memory-errors for addit")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EHAUISU at 2023-04-19 15:02:31.529193 (MySQLdb.ProgrammingError) (1146, "Table 'DATA_LAKE.sapewest_EHAUISU' doesn't exist")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(HAUS) HAUS_mx, MIN(HAUS) HAUS_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,HAUS) n,MANDT,HAUS from DATA_LAKE.sapewest_EHAUISU where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/f405)Error caught for sapwest_ETTIFN at 2023-04-19 15:05:18.716804 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3306): Leaf Error (memlf4p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.12 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 12000.12 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 33870.25 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapwest_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_AUSP at 2023-04-19 16:05:56.152677 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf6p-10g:3307): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11924.38 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 29817.50 Mb). See https://docs.memsql.com/troubleshooting/latest/memory-errors for addit")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(OBJEK) OBJEK_mx, MIN(OBJEK) OBJEK_mn,MAX(ATINN) ATINN_mx, MIN(ATINN) ATINN_mn,MAX(ATZHL) ATZHL_mx, MIN(ATZHL) ATZHL_mn,MAX(MAFID) MAFID_mx, MIN(MAFID) MAFID_mn,MAX(KLART) KLART_mx, MIN(KLART) KLART_mn,MAX(ADZHL) ADZHL_mx, MIN(ADZHL) ADZHL_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,OBJEK,ATINN,ATZHL,MAFID,KLART,ADZHL) n,MANDT,OBJEK,ATINN,ATZHL,MAFID,KLART,ADZHL from DATA_LAKE.sapeast_AUSP where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-19 16:06:02.340202 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf6p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11924.38 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 29817.50 Mb). See https://docs.memsql.com/troubleshooting/latest/memory-errors for addit")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_ETTIFN at 2023-04-19 16:11:19.023504 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3306): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.12 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11916.25 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 30003.00 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapwest_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_AUSP at 2023-04-20 06:37:01.348099 Out of Memory Error: could not allocate block of 262144 bytes (13422432256/13421772800 used) Error caught for sapeast_ETTIFN at 2023-04-20 10:08:58.289898 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf1p-10g:3306): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11940.75 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 36802.50 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_ETTIFN at 2023-04-20 10:08:58.715608 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.12 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11940.75 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 36801.75 Mb). See https://docs.memsql.com/troubleshooting/latest/memory-errors for addit")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapwest_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_ETTIFN at 2023-04-20 10:29:06.145114 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3306): Leaf Error (memlf4p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.38 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11925.38 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 36817.62 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(5) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapwest_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-20 10:29:06.226775 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11925.38 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 36816.50 Mb). See https://docs.memsql.com/troubleshooting/latest/memory-errors for addit")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(5) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_ETTIFN at 2023-04-20 10:32:19.350233 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf6p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11915.75 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 36815.81 Mb). See https://docs.memsql.com/troubleshooting/latest/memory-errors for addit")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(1) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapwest_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-20 10:32:19.547094 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf1p-10g:3306): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 11915.75 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 36822.81 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt
+                        FROM (select NTILE(1) OVER (ORDER BY MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR) n,MANDT,ANLAGE,OPERAND,SAISON,AB,ABLFDNR from DATA_LAKE.sapeast_ETTIFN where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                        GROUP BY n
+                        ORDER BY n
+                        ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_ETTIFN at 2023-04-20 11:15:10.755000 Did not include query hint for parallel processing... please ensure you included comment in sql for where filter should occur and include semicolon.
+                            Example query should like like this: select col1, col2 FROM schema.tablename WHERE someothercol=1 AND /* PARALLEL(BY=col1,col2;) */ AND someothercol=1
+
+                            Query was: SELECT 1 n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt from DATA_LAKE.sapwest_ETTIFN where MANDT='010'
+                            Error caught for sapeast_ETTIFN at 2023-04-20 11:15:12.309843 Did not include query hint for parallel processing... please ensure you included comment in sql for where filter should occur and include semicolon.
+                            Example query should like like this: select col1, col2 FROM schema.tablename WHERE someothercol=1 AND /* PARALLEL(BY=col1,col2;) */ AND someothercol=1
+
+                            Query was: SELECT 1 n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(OPERAND) OPERAND_mx, MIN(OPERAND) OPERAND_mn,MAX(SAISON) SAISON_mx, MIN(SAISON) SAISON_mn,MAX(AB) AB_mx, MIN(AB) AB_mn,MAX(ABLFDNR) ABLFDNR_mx, MIN(ABLFDNR) ABLFDNR_mn, count(*) cnt from DATA_LAKE.sapeast_ETTIFN where MANDT='010'
+                            Error caught for sapwest_ETTIFN at 2023-04-20 11:53:48.497159 Binder Error: Referenced column "name" not found in FROM clause!
+Candidate bindings: "source_df.n", "source_df.cnt", "source_df.ab_mx", "source_df.ab_mn"Error caught for sapeast_EASTL at 2023-04-25 09:38:28.724417 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_EASTS at 2023-04-25 09:38:28.742420 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_EGERH at 2023-04-25 09:38:28.743419 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_EGERS at 2023-04-25 09:38:31.021049 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_EHAUISU at 2023-04-25 09:38:31.051814 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ELPASS at 2023-04-25 09:38:31.051814 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_EQUI at 2023-04-25 09:38:33.327205 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTAF at 2023-04-25 09:38:33.358202 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ETTIFN at 2023-04-25 09:38:33.358202 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_EVBS at 2023-04-25 09:38:35.614693 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ZCC_LOSS_FACT_ID at 2023-04-25 09:38:35.677312 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_ZCPOLWESTN at 2023-04-25 09:38:35.677312 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_EVER at 2023-04-25 09:38:37.916038 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_CABN at 2023-04-25 09:38:37.993634 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_AUSP at 2023-04-25 09:38:37.993634 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_EANLH at 2023-04-25 09:38:40.190679 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EASTL at 2023-04-25 09:38:40.299678 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_EANL at 2023-04-25 09:38:40.300675 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EASTS at 2023-04-25 09:38:42.476721 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EGERH at 2023-04-25 09:38:42.625444 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_ELPASS at 2023-04-25 09:38:44.757859 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_ETTAF at 2023-04-25 09:38:44.947854 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EQUI at 2023-04-25 09:38:44.948851 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_ETTIFN at 2023-04-25 09:38:47.070574 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EVBS at 2023-04-25 09:38:47.260500 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)e/e/13/e3q8)Error caught for sapwest_ZCPOLWESTN at 2023-04-25 09:38:49.390747 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EVER at 2023-04-25 09:38:49.579744 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_AUSP at 2023-04-25 09:38:49.580742 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_CABN at 2023-04-25 09:38:51.683686 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EANLH at 2023-04-25 09:38:51.906964 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EANL at 2023-04-25 09:38:51.906964 (MySQLdb.OperationalError) (2005, "Unknown server host 'memsql-master' (11001)")
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_AUSP at 2023-05-01 10:51:18.961732 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.50 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 14572.00 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 33614.05 Mb). See https://docs.memsql.com/troubleshooting/latest/memory-errors for addit")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(OBJEK) OBJEK_mx, MIN(OBJEK) OBJEK_mn,MAX(ATINN) ATINN_mx, MIN(ATINN) ATINN_mn,MAX(ATZHL) ATZHL_mx, MIN(ATZHL) ATZHL_mn,MAX(MAFID) MAFID_mx, MIN(MAFID) MAFID_mn,MAX(KLART) KLART_mx, MIN(KLART) KLART_mn,MAX(ADZHL) ADZHL_mx, MIN(ADZHL) ADZHL_mn, count(*) cnt
+                            FROM (select NTILE(10) OVER (ORDER BY MANDT,OBJEK,ATINN,ATZHL,MAFID,KLART,ADZHL) n,MANDT,OBJEK,ATINN,ATZHL,MAFID,KLART,ADZHL from DATA_LAKE.sapeast_AUSP where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                            GROUP BY n
+                            ORDER BY n
+                            ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapeast_EASTL at 2023-05-03 10:47:36.654018 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapeast_EASTS at 2023-05-03 10:47:47.786174 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapeast_EGERS at 2023-05-03 10:47:48.625076 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapeast_EGERH at 2023-05-03 10:47:54.243229 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapeast_EHAUISU at 2023-05-03 10:47:54.906060 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapeast_ETTAF at 2023-05-03 10:47:59.839514 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapeast_ELPASS at 2023-05-03 10:48:00.877503 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapeast_EQUI at 2023-05-03 10:48:07.161823 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapeast_ETTIFN at 2023-05-03 10:48:07.474814 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapeast_EVBS at 2023-05-03 10:48:08.374453 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapeast_ZCC_LOSS_FACT_ID at 2023-05-03 10:48:09.725661 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapeast_ZCPOLWESTN at 2023-05-03 10:48:10.071187 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapeast_CABN at 2023-05-03 10:48:12.628597 (cx_Oracle.DatabaseError) ORA-01017: invalid username/password; logon denied
+(Background on this error at: http://sqlalche.me/e/13/4xp6)Error caught for sapwest_EASTL at 2023-05-03 12:24:54.655056 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 12560.00 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 34371.80 Mb). See https://docs.memsql.com/troubleshooting/latest/memory-errors for addit")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(ANLAGE) ANLAGE_mx, MIN(ANLAGE) ANLAGE_mn,MAX(LOGIKNR) LOGIKNR_mx, MIN(LOGIKNR) LOGIKNR_mn,MAX(BIS) BIS_mx, MIN(BIS) BIS_mn, count(*) cnt
+                            FROM (select NTILE(10) OVER (ORDER BY MANDT,ANLAGE,LOGIKNR,BIS) n,MANDT,ANLAGE,LOGIKNR,BIS from DATA_LAKE.sapwest_EASTL where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                            GROUP BY n
+                            ORDER BY n
+                            ]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)Error caught for sapwest_EVER at 2023-05-04 10:28:34.534321 'Connection' object has no attribute 'exec_driver_sql'Error caught for sapwest_DFKKOP at 2023-07-13 09:33:10.594617 (MySQLdb.OperationalError) (1060, "Duplicate column name 'OPUPK'")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(OPBEL) OPBEL_mx, MIN(OPBEL) OPBEL_mn,MAX(OPUPW) OPUPW_mx, MIN(OPUPW) OPUPW_mn,MAX(OPUPK) OPUPK_mx, MIN(OPUPK) OPUPK_mn,MAX(OPUPK) OPUPK_mx, MIN(OPUPK) OPUPK_mn,MAX(OPUPZ) OPUPZ_mx, MIN(OPUPZ) OPUPZ_mn,MAX(BUKRS) BUKRS_mx, MIN(BUKRS) BUKRS_mn, count(*) cnt
+                            FROM (select NTILE(10) OVER (ORDER BY MANDT,OPBEL,OPUPW,OPUPK,OPUPK,OPUPZ,BUKRS) n,MANDT,OPBEL,OPUPW,OPUPK,OPUPK,OPUPZ,BUKRS from DATA_LAKE.sapwest_DFKKOP where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                            GROUP BY n
+                            ORDER BY n
+                            ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)Error caught for sapwest_DFKKOP at 2023-07-13 09:34:12.729805 (MySQLdb.OperationalError) (1060, "Duplicate column name 'OPUPK'")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(OPBEL) OPBEL_mx, MIN(OPBEL) OPBEL_mn,MAX(OPUPW) OPUPW_mx, MIN(OPUPW) OPUPW_mn,MAX(OPUPK) OPUPK_mx, MIN(OPUPK) OPUPK_mn,MAX(OPUPK) OPUPK_mx, MIN(OPUPK) OPUPK_mn,MAX(OPUPZ) OPUPZ_mx, MIN(OPUPZ) OPUPZ_mn,MAX(BUKRS) BUKRS_mx, MIN(BUKRS) BUKRS_mn, count(*) cnt
+                            FROM (select NTILE(10) OVER (ORDER BY MANDT,OPBEL,OPUPW,OPUPK,OPUPK,OPUPZ,BUKRS) n,MANDT,OPBEL,OPUPW,OPUPK,OPUPK,OPUPZ,BUKRS from DATA_LAKE.sapwest_DFKKOP where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                            GROUP BY n
+                            ORDER BY n
+                            ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)Error caught for sapwest_DFKKOP at 2023-07-13 09:37:53.582578 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3307): Leaf Error (memlf4p-10g:3307): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64846.62 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 13295.75 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 29624.91 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(OPBEL) OPBEL_mx, MIN(OPBEL) OPBEL_mn,MAX(OPUPW) OPUPW_mx, MIN(OPUPW) OPUPW_mn,MAX(OPUPK) OPUPK_mx, MIN(OPUPK) OPUPK_mn,MAX(OPUPZ) OPUPZ_mx, MIN(OPUPZ) OPUPZ_mn,MAX(BUKRS) BUKRS_mx, MIN(BUKRS) BUKRS_mn, count(*) cnt
+                            FROM (select NTILE(10) OVER (ORDER BY MANDT,OPBEL,OPUPW,OPUPK,OPUPZ,BUKRS) n,MANDT,OPBEL,OPUPW,OPUPK,OPUPZ,BUKRS from DATA_LAKE.sapwest_DFKKOP where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                            GROUP BY n
+                            ORDER BY n
+                            ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)Error caught for sapwest_DFKKOP at 2023-07-13 09:43:53.595056 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf5p-10g:3307): Leaf Error (memlf3p-10g:3307): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 13322.50 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 29615.03 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(OPBEL) OPBEL_mx, MIN(OPBEL) OPBEL_mn,MAX(OPUPW) OPUPW_mx, MIN(OPUPW) OPUPW_mn,MAX(OPUPK) OPUPK_mx, MIN(OPUPK) OPUPK_mn,MAX(OPUPZ) OPUPZ_mx, MIN(OPUPZ) OPUPZ_mn,MAX(BUKRS) BUKRS_mx, MIN(BUKRS) BUKRS_mn, count(*) cnt
+                            FROM (select NTILE(10) OVER (ORDER BY MANDT,OPBEL,OPUPW,OPUPK,OPUPZ,BUKRS) n,MANDT,OPBEL,OPUPW,OPUPK,OPUPZ,BUKRS from DATA_LAKE.sapwest_DFKKOP where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                            GROUP BY n
+                            ORDER BY n
+                            ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)Error caught for sapwest_DFKKOP at 2023-07-13 09:47:43.686726 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf5p-10g:3307): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.12 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 13267.75 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 29699.03 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(OPBEL) OPBEL_mx, MIN(OPBEL) OPBEL_mn,MAX(OPUPW) OPUPW_mx, MIN(OPUPW) OPUPW_mn,MAX(OPUPK) OPUPK_mx, MIN(OPUPK) OPUPK_mn,MAX(OPUPZ) OPUPZ_mx, MIN(OPUPZ) OPUPZ_mn,MAX(BUKRS) BUKRS_mx, MIN(BUKRS) BUKRS_mn, count(*) cnt
+                            FROM (select NTILE(10) OVER (ORDER BY MANDT,OPBEL,OPUPW,OPUPK,OPUPZ,BUKRS) n,MANDT,OPBEL,OPUPW,OPUPK,OPUPZ,BUKRS from DATA_LAKE.sapwest_DFKKOP where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                            GROUP BY n
+                            ORDER BY n
+                            ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)Error caught for sapwest_DFKKOP at 2023-07-13 10:06:57.790397 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf6p-10g:3306): Leaf Error (memlf1p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64843.38 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 13141.75 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 29816.03 Mb). See https://docs.memsql.com/troubleshooting")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(OPBEL) OPBEL_mx, MIN(OPBEL) OPBEL_mn,MAX(OPUPW) OPUPW_mx, MIN(OPUPW) OPUPW_mn,MAX(OPUPK) OPUPK_mx, MIN(OPUPK) OPUPK_mn,MAX(OPUPZ) OPUPZ_mx, MIN(OPUPZ) OPUPZ_mn,MAX(BUKRS) BUKRS_mx, MIN(BUKRS) BUKRS_mn, count(*) cnt
+                            FROM (select NTILE(10) OVER (ORDER BY MANDT,OPBEL,OPUPW,OPUPK,OPUPZ,BUKRS) n,MANDT,OPBEL,OPUPW,OPUPK,OPUPZ,BUKRS from DATA_LAKE.sapwest_DFKKOP where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                            GROUP BY n
+                            ORDER BY n
+                            ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)Error caught for sapwest_DFKKOP at 2023-07-13 10:12:01.977642 (MySQLdb.OperationalError) (1712, "Leaf Error (memlf4p-10g:3306): Leaf Error (memlf6p-10g:3307): Memory used by MemSQL (64845.00 Mb) has reached the 'maximum_memory' setting (65045 Mb) on this node. Possible causes include (1) available query execution memory has been used up for table memory (in use table memory: 13099.50 Mb) and (2) the query is large and complex and requires more query execution memory than is available (in use query execution memory 29933.57 Mb). See https://docs.memsql.com/troubleshooting/latest/memory-errors for addit")
+[SQL: SELECT n, MAX(MANDT) MANDT_mx, MIN(MANDT) MANDT_mn,MAX(OPBEL) OPBEL_mx, MIN(OPBEL) OPBEL_mn, count(*) cnt
+                            FROM (select NTILE(10) OVER (ORDER BY MANDT,OPBEL) n,MANDT,OPBEL,OPUPW,OPUPK,OPUPZ,BUKRS from DATA_LAKE.sapwest_DFKKOP where MANDT='010' AND '<plogic>'='<plogic>') abc_xyz
+                            GROUP BY n
+                            ORDER BY n
+                            ]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)Error caught for sapwest_DFKKOP at 2023-07-13 10:26:53.394913 (MySQLdb.OperationalError) (2000, 'Unknown error')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)Error caught for sapwest_DFKKOP at 2023-07-13 18:44:53.062188 The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().Error caught for sapwest_DFKKOP at 2023-07-14 08:09:32.388914 (MySQLdb.OperationalError) (1049, "Unknown database 'SAPR3'")
+[SQL: select 0 indx, coalesce((select count(*) from (select MANDT,OPBEL,OPUPW,OPUPK,OPUPZ,BUKRS from SAPR3.DFKKOP where MANDT='010' AND  coalesce(OPBEL,'') BETWEEN '000100000004' AND '001051874831' AND  1=1 )),0) n]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)Error caught for sapwest_DFKKOP at 2023-07-14 09:21:34.445668 'DataFrame' object is not callableError caught for sapwest_DFKKOP at 2023-07-14 10:24:51.110760 'DataFrame' object is not callableError caught for sapwest_DFKKOP at 2023-07-14 11:23:33.477769 'DataFrame' object is not callableError caught for sapwest_DFKKOP at 2023-07-14 16:18:18.977949 local variable 'col' referenced before assignmentError caught for sapwest_DFKKOP at 2023-07-14 16:43:30.913965 Passing a set as an indexer is not supported. Use a list instead.Error caught for sapwest_DFKKOP at 2023-07-17 09:12:02.396044 'int' object has no attribute 'lower'Error caught for sapwest_DFKKOP at 2023-07-17 09:12:22.046549 'int' object has no attribute 'lower'Error caught for sapwest_DFKKOP at 2023-07-17 09:13:21.482263 'int' object has no attribute 'lower'Error caught for sapwest_DFKKOP at 2023-07-17 09:13:39.627801 'int' object has no attribute 'lower'Error caught for sapwest_DFKKOP at 2023-07-17 09:14:48.958579 'int' object has no attribute 'lower'Error caught for sapwest_DFKKOP at 2023-07-17 09:16:38.758384 'int' object has no attribute 'lower'Error caught for sapwest_EVER at 2023-07-18 15:36:15.508991 "None of [Index([11], dtype='int32')] are in the [columns]"Error caught for sapwest_DFKKOP at 2023-07-19 19:04:16.336685 (cx_Oracle.DatabaseError) DPI-1080: connection was closed by ORA-3113
+(Background on this error at: https://sqlalche.me/e/20/4xp6)Error caught for sapwest_EVER at 2023-07-21 11:52:08.611733 Location based indexing can only have [integer, integer slice (START point is INCLUDED, END point is EXCLUDED), listlike of integers, boolean array] typesError caught for sapwest_EVER at 2023-07-24 09:59:57.165200 'Series' object has no attribute 'iterrows'Error caught for sapwest_ETTAF at 2023-07-25 10:04:21.949584 (MySQLdb.ProgrammingError) not enough arguments for format string
+[SQL: select 0 indx, coalesce((select count(*) from (select MANDT,TARIFTYP,OPERAND,SAISON,BIS from DATA_LAKE.sapwest_ETTAF where MANDT='010' AND  coalesce(MANDT,'') BETWEEN '010' AND '010' AND  coalesce(TARIFTYP,'') BETWEEN 'ACC-317' AND 'DOM-F1213' AND  coalesce(OPERAND,'') BETWEEN '10%KW_B' AND 'ZSOLKWH_MB' AND  coalesce(SAISON,'') BETWEEN ' ' AND 'WINTER' AND  coalesce(BIS,'') BETWEEN '20030531' AND '99991231' AND  1=1 )),0) cnt]
+(Background on this error at: https://sqlalche.me/e/20/f405)Error caught for sapwest_ETTIFN at 2023-07-25 10:24:14.412229 '_mx'Error caught for sapwest_ETTAF at 2023-07-25 10:48:45.855300 (MySQLdb.ProgrammingError) not enough arguments for format string
+[SQL: select 0 indx, coalesce((select count(*) from (select MANDT,TARIFTYP,OPERAND,SAISON,BIS from DATA_LAKE.sapwest_ETTAF where MANDT='010' AND  coalesce(MANDT,'') BETWEEN '010' AND '010' AND  coalesce(TARIFTYP,'') BETWEEN 'ACC-317' AND 'DOM-F1213' AND  coalesce(OPERAND,'') BETWEEN '10%KW_B' AND 'ZSOLKWH_MB' AND  coalesce(SAISON,'') BETWEEN ' ' AND 'WINTER' AND  coalesce(BIS,'') BETWEEN '20030531' AND '99991231' AND  1=1 )),0) cnt]
+(Background on this error at: https://sqlalche.me/e/20/f405)Error caught for sapwest_ETTIFN at 2023-07-25 11:02:04.970609 '_mx'

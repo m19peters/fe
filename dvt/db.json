@@ -1,0 +1,5 @@
+{ "config" : [
+    { "name": "oracle_prod", "dbtype":"db_oracle", "cnnstr": "oracle+cx_oracle://user:pw@oracle_server:1527/dbname" },
+    { "name": "ss_prod" , "dbtype":"db_ss", "cnnstr": "mysql://user:pw@singlestore_server:3306/dbname" }
+    ]
+}
